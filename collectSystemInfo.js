@@ -16,7 +16,7 @@ async function collectSystemInfo() {
       'Serial Number da BIOS': system.bios?.serial || 'N/A',
       'Modelo do Computador': system.model,
       'Modelo da CPU': cpu.brand,
-      'Qualidade de Memória RAM': `${Math.round((memory.active / memory.total) * 100)}%`
+      'Qualidade de Memória RAM': `${Math.round((memory.active / memory.total) * 100)}`
     }
 
     // Conversao do objeto para CSV
